@@ -25,7 +25,9 @@ export function SiteHeader() {
     }
 
     window.addEventListener("storage", handleStorageChange)
+        window.addEventListener("auth-change", handleStorageChange)
     return () => window.removeEventListener("storage", handleStorageChange)
+          window.removeEventListener("auth-change", handleStorageChange)
   }, [])
 
   const handleLogout = () => {
