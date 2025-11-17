@@ -56,7 +56,6 @@ export function SiteHeader() {
 
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
         <Link href="/" className="flex items-center gap-2" aria-label="College Club Directory Home">
-          <div className="h-8 w-8 rounded-md bg-primary" aria-hidden />
           <span className="font-semibold tracking-tight"><BookOpen className="h-5 w-5 mr-2" /> Club Directory</span>
         </Link>
 
