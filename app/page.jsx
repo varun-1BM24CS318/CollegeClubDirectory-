@@ -40,7 +40,7 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative z-10 mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-32">
+      <section className="relative z-10 mx-auto max-w-5xl px-6 py-10 md:px-12 md:py-8">
         <div className="space-y-8 text-center">
           {/* Badge */}
           <div className="inline-block">
@@ -91,7 +91,7 @@ export default function LandingPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="relative z-10 mx-auto max-w-5xl px-6 md:px-12 py-16">
+      <section className="relative z-10 mx-auto max-w-5xl px-6 md:px-12 py-8">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           <div className="text-center p-4">
             <p className="text-4xl md:text-5xl font-bold text-blue-400">50+</p>
@@ -109,7 +109,7 @@ export default function LandingPage() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="relative z-10 mx-auto max-w-5xl px-6 md:px-12 py-16 mb-16">
+      <section className="relative z-10 mx-auto max-w-5xl px-6 md:px-12 py-8 mb-16">
         <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-8 md:p-12 border border-slate-700">
           <div className="flex gap-4 mb-6">
             {[...Array(5)].map((_, i) => (
