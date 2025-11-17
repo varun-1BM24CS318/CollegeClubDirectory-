@@ -69,6 +69,13 @@ export default function ClubsPage() {
       <section className="mb-6">
         <h1 className="text-balance text-2xl font-semibold tracking-tight md:text-3xl">Explore Student Clubs</h1>
         <p className="text-pretty text-sm text-muted-foreground md:text-base">
+              <>
+      <style dangerouslySetInnerHTML={{__html: `
+        main { position: relative !important; z-index: 1 !important; }
+        body > div[data-radix-popper-content-wrapper],
+        body > div[style*="position: fixed"] { z-index: 99999 !important; }
+      `}} />
+
           Browse clubs by category and membership. Use quick view or open a full details page.
         </p>
       </section>
@@ -170,5 +177,6 @@ export default function ClubsPage() {
 
       <ClubModal open={open} onOpenChange={setOpen} club={selected} />
     </main>
+          </>
   )
 }
