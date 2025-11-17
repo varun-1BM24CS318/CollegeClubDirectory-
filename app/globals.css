@@ -317,3 +317,15 @@
 }
   }
 }
+
+/* Force body children to not create stacking contexts that interfere with dialogs */
+body > * {  
+  isolation: auto !important;
+}
+
+/* Ensure dialog portal is always on top */
+body > [data-radix-portal] {
+  isolation: isolate !important;
+  z-index: 9999 !important;
+  position: fixed !important;
+}
