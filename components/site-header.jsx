@@ -40,7 +40,7 @@ export function SiteHeader() {
 
 
   return (
-    <header className="border-b bg-card">
+    <header className="border-b bg-car z-[100] sticky top-0d">
       <div className="mx-auto max-w-6xl px-4 py-3 md:px-6 flex justify-center items-center gap-4">
         <div className="relative">
           <Image
