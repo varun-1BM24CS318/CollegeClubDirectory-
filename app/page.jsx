@@ -36,12 +36,7 @@ export default function LandingPage() {
             <p className="text-xs text-slate-400">of Engineering</p>
           </div>
         </div>
-        <Link
-          href="/clubs"
-          className="hidden md:inline-flex px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold transition-colors"
-        >
-          Explore Clubs
-        </Link>
+
       </nav>
 
       {/* Hero Section */}
