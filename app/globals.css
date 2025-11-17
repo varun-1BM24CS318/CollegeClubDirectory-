@@ -298,5 +298,22 @@
 @layer base {
   * {
     @apply scroll-smooth;
+
+/* Fix dialog stacking context issues - ensure dialogs always appear on top */
+@layer base {
+  [data-slot="dialog-portal"] {
+    isolation: isolate;
+    position: fixed;
+    z-index: 9999 !important;
+  }
+  
+  [data-slot="dialog-overlay"] {
+    z-index: 9999 !important;
+  }
+  
+  [data-slot="dialog-content"] {
+    z-index: 10000 !important;
+  }
+}
   }
 }
