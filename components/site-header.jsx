@@ -36,9 +36,6 @@ export function SiteHeader() {
     router.push("/")
   }
 
-  if (!mounted) {
-    return null
-  }
 
   return (
     <header className="border-b bg-card">
@@ -76,7 +73,7 @@ export function SiteHeader() {
               My Club
             </Link>
           )}
-          {currentUser ? (
+        {mounted && currentUser ? (
             <div className="flex items-center gap-4">
               <span className="text-sm text-muted-foreground">{currentUser.name}</span>
               <Button size="sm" onClick={handleLogout} variant="outline">
