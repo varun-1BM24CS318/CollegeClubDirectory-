@@ -154,8 +154,13 @@ export default function ClubAdminPage() {
 
         {/* Club Details Card */}
         <Card>
-          <CardHeader>
-            <CardTitle>Club Information</CardTitle>
+<CardHeader className="flex flex-row items-center justify-between">
+              <CardTitle>Club Information</CardTitle>
+              {!editMode && (
+                <Button size="sm" variant="outline" onClick={() => setEditMode(true)}>
+                  Edit
+                </Button>
+              )}
             <CardDescription>
               {editMode ? "Make changes to your club details below" : "View your club information"}
             </CardDescription>
