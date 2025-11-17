@@ -60,17 +60,17 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          <Link className="text-sm hover:underline" href="/">
+          <Link className="text-sm px-3 py-1.5 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md" href="/">
             Home
           </Link>
-          <Link className="text-sm hover:underline" href="/about">
+          <Link className="text-sm px-3 py-1.5 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md" href="/about">
             About
           </Link>
-          <Link className="text-sm hover:underline" href="/contact">
+          <Link className="text-sm px-3 py-1.5 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md" href="/contact">
             Contact
           </Link>
           {currentUser?.role === "admin" && (
-            <Link className="text-sm hover:underline" href={`/club-admin/${currentUser.assignedClubId}`}>
+            <Link className="text-sm px-3 py-1.5 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md" href={`/club-admin/${currentUser.assignedClubId}`}>
               My Club
             </Link>
           )}
@@ -89,7 +89,7 @@ export function SiteHeader() {
                 </Button>
               </Link>
               <Link href="/sign-up">
-                <Button size="sm">Sign Up</Button>
+                <Button size="sm" variant="outline">Sign Up</Button>
               </Link>
             </div>
           )}
